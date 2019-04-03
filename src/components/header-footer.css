@@ -5,8 +5,8 @@
     height: 180px;
     font-size: 20px;
     /* background-color: #2e81b8; */
-    background-image: url(https://res.cloudinary.com/siouxcitymusic/image/upload/v1549348895/horizon6.png);
-    background-size: auto 100%;
+    background-image: url(https://res.cloudinary.com/siouxcitymusic/image/upload/v1554263678/Bernie_Reactor/BernieBanner.jpg);
+    background-size: cover;
     background-position: center;
     color: white;
     /* filter: blur(10px) */
@@ -31,6 +31,9 @@
     margin-top: auto;
     margin-bottom: auto;
     left: 20px;
+    text-align: left;
+    font-size: 33px;
+    background-color: rgba(0, 0, 0, 0.692)
 }
 
 .logo-image{
@@ -62,6 +65,7 @@
     display: flex;
     /* width: 30%; */
     font-size: 25px;
+    
 }
 
 .header-menu nav{
@@ -69,6 +73,9 @@
     cursor: pointer;
     transition: 0.3s color;
     font-style: bold;
+    background-color: rgba(0, 0, 0, 0.658);
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .header-menu a{

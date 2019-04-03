@@ -44,7 +44,7 @@
 }
 
 
-.pro-list-ul{
+.org-list-ul{
   display: grid;
   grid-template-columns: repeat(auto-fit, 300px);
   grid-template-rows: minmax(0px, 1fr);
@@ -63,7 +63,7 @@
   }
 
 
-.pro-list-item{
+.org-list-item{
     background-color: rgb(255, 255, 255);
     overflow: hidden;
     margin: 10px;
@@ -74,14 +74,14 @@
     align-items: center;
     padding: 0;
     position: relative;
-    height: 400px;
+    height: 350px;
     margin: 0;
     /* bottom: 0; */
     transition: 0.5s box-shadow;
     border: solid black 2px;
 }
 
-.pro-list-item > div {
+.org-list-item > div {
     width: 100%;
     height: 100%;
     align-items: center;
@@ -93,11 +93,11 @@
     grid-row: 2/2;
 }
 
-.pro-list-item:hover{
+.org-list-item:hover{
     box-shadow: rgb(60, 59, 59) 20px 20px 10px;
 }
 
-.pro-list-item-active{
+.org-list-item-active{
     background-color: blanchedalmond;
     overflow: hidden;
     width: 600px;
@@ -106,7 +106,7 @@
     padding: 1rem;
 }
 
-.pro-list-item-active-edit{
+.org-list-item-active-edit{
     background-color: blanchedalmond;
     overflow: hidden;
     width: 600px;
@@ -116,7 +116,7 @@
     padding: 1rem;
 }
 
-.pro-list-item-active > div {
+.org-list-item-active > div {
   display: grid;
   grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
   /* grid-template-rows: 5% 5% 5% 5% 5% 5% 5% 5% 10% 10% 10% 10% 10% 10%; */
@@ -125,7 +125,7 @@
   animation: fade 1s forwards;
 }
 
-.pro-list-item-active-edit > div {
+.org-list-item-active-edit > div {
     display: grid;
     grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
     grid-template-rows: 5% 5% 5% 5% 5% 5% 5% 5% 10% 10% 10% 10% 10% 10%;
@@ -161,7 +161,7 @@
     border-bottom: solid 1px blue
 }
 
-.pro-list-item-active h2 {
+.org-list-item-active h2 {
     grid-column: 1/7;
     grid-row: 1/7;
     display: flex;
@@ -198,14 +198,14 @@
     max-height: 150px;
 }
 
-.pro-list-item h2{
+.org-list-item h2{
   margin-top: 5px;
   margin-bottom: 5px;
   font-size: 18px;
   /* animation: fade 2s forwards; */
 }
 
-.pro-list-item p{
+.org-list-item p{
     display: inline-block;
     width: 90%;
     font-size: 14px;
@@ -414,16 +414,16 @@
         display: none;
     }
 
-    .pro-list-ul{
+    .org-list-ul{
         grid-template-columns: repeat(auto-fit, 100%);
         grid-gap: 10px;
     }
 
-    .pro-list-item{
+    .org-list-item{
         height: 100px;
     }
 
-    .pro-list-item > div {
+    .org-list-item > div {
         width: 100%;
         height: 100%;
         display: flex;
@@ -431,24 +431,24 @@
         justify-items: flex-start;
     }
 
-    .pro-list-item h2 {
+    .org-list-item h2 {
         font-size: 14px;
         width: 60%;
     }
 
-    .pro-list-item-active {
+    .org-list-item-active {
         /* height: 80vw; */
         width: 90vw;
     }
 
-    .pro-list-item-active h2{
+    .org-list-item-active h2{
         /* height: 80vw; */
         font-size: 19px;
         grid-row: 1/4;
         grid-column: 1/11;
     }
 
-    .pro-list-item-active-edit{
+    .org-list-item-active-edit{
         width: 90vw;
     }
 

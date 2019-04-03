@@ -1,11 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import {getActiveConPost} from '../../actions/home/con-actions';
+import { getActiveCelebPost } from '../../actions/home/celeb-actions';
 import { showModal } from '../../actions/home/modal'
 import '../current-column.css';
 import '../edit.css'
 
-class ConCard extends React.Component {
+class CelebCard extends React.Component {
   constructor(props) {
     super(props);
     this.quoteTitle = React.createRef();
@@ -27,11 +27,11 @@ class ConCard extends React.Component {
     render() 
       {
         return (
-          <div className="pro-list-item"
+          <div className="org-list-item"
             onClick={() => {
               document.body.style.overflow = "hidden"
-              this.props.dispatch(getActiveConPost(this.props.id))
-              this.props.dispatch(showModal("active-con-card"))
+              this.props.dispatch(getActiveCelebPost(this.props.id))
+              this.props.dispatch(showModal("active-celeb-card"))
               }}>
             <div>
               <div className="image-container">
@@ -50,10 +50,10 @@ class ConCard extends React.Component {
   
 
   const mapStateToProps = state => ({
-    editing: state.conReducers.editing,
-    expanded: state.conReducers.expanded,
-    loading: state.conReducers.editLoading,
-    imgUrl: state.conReducers.imgUrl
+    editing: state.celebReducers.editing,
+    expanded: state.celebReducers.expanded,
+    loading: state.celebReducers.editLoading,
+    imgUrl: state.celebReducers.imgUrl
   });
 
-  export default connect (mapStateToProps) (ConCard)
+  export default connect (mapStateToProps) (CelebCard)

@@ -1,8 +1,8 @@
 import {createStore, applyMiddleware, combineReducers} from 'redux'
 import thunk from 'redux-thunk'
-import proReducers from './reducers/home/pro-reducers'
-import conReducers from './reducers/home/con-reducers'
-import congressReducers from './reducers/home/congress-reducers'
+import orgReducers from './reducers/home/org-reducers'
+import polReducers from './reducers/home/pol-reducers'
+import celebReducers from './reducers/home/celeb-reducers'
 import authReducer from './reducers/auth'
 import modal from './reducers/home/modal'
 import feedback from './reducers/feedback'
@@ -10,7 +10,7 @@ import {setAuthToken, refreshAuthToken} from './actions/auth';
 import {loadAuthToken} from './local-storage';
 
 
-const reducers = combineReducers({proReducers, conReducers, congressReducers, modal, auth: authReducer, feedback});
+const reducers = combineReducers({orgReducers, polReducers, celebReducers, modal, auth: authReducer, feedback});
 const store = createStore(reducers, applyMiddleware(thunk));
 
 // Hydrate the authToken from localStorage if it exist

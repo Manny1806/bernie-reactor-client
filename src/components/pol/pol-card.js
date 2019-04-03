@@ -1,16 +1,15 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { getActiveProPost } from '../../actions/home/pro-actions';
+import {getActivePolPost} from '../../actions/home/pol-actions';
 import { showModal } from '../../actions/home/modal'
 import '../current-column.css';
 import '../edit.css'
 
-class ProCard extends React.Component {
+class PolCard extends React.Component {
   constructor(props) {
     super(props);
     this.quoteTitle = React.createRef();
     this.quoteText = React.createRef();
-    this.image = React.createRef();
     }
     
     componentDidMount(){
@@ -25,24 +24,22 @@ class ProCard extends React.Component {
       }
 
     }
-
     render() 
       {
         return (
-          <div className="pro-list-item"
+          <div className="org-list-item"
             onClick={() => {
               document.body.style.overflow = "hidden"
-              this.props.dispatch(getActiveProPost(this.props.id))
-              this.props.dispatch(showModal("active-pro-card"))
+              this.props.dispatch(getActivePolPost(this.props.id))
+              this.props.dispatch(showModal("active-pol-card"))
               }}>
             <div>
               <div className="image-container">
-                <img ref={this.image} alt="" className="image" src={this.props.cardItem.imgUrl || "https://www.freeiconspng.com/uploads/no-image-icon-11.PNG"}/>
+                <img className="image" alt="" src={this.props.cardItem.imgUrl || "https://www.freeiconspng.com/uploads/no-image-icon-11.PNG"}/>
               </div>
               <h2 ref={this.quoteTitle}>{this.props.cardItem.title}</h2>
               <div className="quote-container">
-                <p ref={this.quoteText}>
-                </p>
+                <p ref={this.quoteText}></p>
                 {/* <div className="read-more"/> */}
               </div>
             </div>
@@ -53,10 +50,10 @@ class ProCard extends React.Component {
   
 
   const mapStateToProps = state => ({
-    editing: state.proReducers.editing,
-    expanded: state.proReducers.expanded,
-    loading: state.proReducers.editLoading,
-    imgUrl: state.proReducers.imgUrl
+    editing: state.polReducers.editing,
+    expanded: state.polReducers.expanded,
+    loading: state.polReducers.editLoading,
+    imgUrl: state.polReducers.imgUrl
   });
 
-  export default connect (mapStateToProps) (ProCard)
+  export default connect (mapStateToProps) (PolCard)

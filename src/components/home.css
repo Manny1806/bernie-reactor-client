@@ -1,10 +1,10 @@
 body{
-    background-color: rgb(166, 175, 194);
+    background-color: rgb(72, 115, 255);
     /* overflow: hidden; */
 }
 .Home {
     text-align: center;
-    background-color: #aed5e5;
+    background-color: #e1f0ff;
     position: relative;
     max-width: 1500px;
     margin-left:auto;
@@ -28,7 +28,7 @@ body{
     height: 180px;
     font-size: 20px;
     /* background-color: #2e81b8; */
-    background-image: url(https://res.cloudinary.com/siouxcitymusic/image/upload/v1549348895/horizon6.png);
+    background-image: url(https://res.cloudinary.com/siouxcitymusic/image/upload/v1554263678/Bernie_Reactor/BernieBanner.jpg);
     background-size: auto 100%;
     background-position: center;
     color: white;
@@ -47,6 +47,8 @@ body{
 
 .logo-image-container{
     position: absolute;
+    display: flex;
+    align-items: center;
     width: 150px;
     height: 150px;
     top:0;
@@ -54,6 +56,7 @@ body{
     margin-top: auto;
     margin-bottom: auto;
     left: 20px;
+    letter-spacing: 2px;
 }
 
 .logo-image{
@@ -199,7 +202,7 @@ body{
 }
 
 .landing-text-1{
-    font-family: Libre Franklin;
+    font-family: Poppins;
 }
 
 .landing-text-2{
@@ -211,7 +214,7 @@ body{
 }
 
 .landing-text-4{
-    font-family: Libre Franklin;
+    font-family: Poppins;
 }
 
 /* container for the three different 'column' header buttons */
@@ -264,7 +267,7 @@ body{
     /* top: 0; */
     height: 75%;
     width: 30%;
-    background-image: url('https://nuovonovalis.files.wordpress.com/2014/05/cigar_chomping_liberals.jpg');
+    background-image: url('https://res.cloudinary.com/siouxcitymusic/image/upload/v1554258621/Bernie_Reactor/Organizations.jpg');
     background-position: center;
     background-size: cover;
     /* border-top: solid black 2px;
@@ -291,8 +294,8 @@ body{
     background-image: url('https://nuovonovalis.files.wordpress.com/2014/05/cigar_chomping_liberals.jpg');
     background-position: center;
     background-size: cover;
-    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(0%);
+    /* -webkit-filter: grayscale(0%);
+    filter: grayscale(0%); */
     box-sizing: border-box;
     font-size: 30px;
     color: black;
@@ -341,29 +344,30 @@ body{
 }
 
 /* header button/div for those against new NAFTA */
-.con-header {
+.pol-header {
     display: flex;
     position: relative;;
     height: 75%;
     width: 30%;
     /* left: 33.33%; */
-    background-image: url('https://res.cloudinary.com/siouxcitymusic/image/upload/v1553144587/stealing_image_from_Janet_Jarman_2019.01.29.jpg');
+    background-image: url('https://res.cloudinary.com/siouxcitymusic/image/upload/v1554259747/Bernie_Reactor/Politicians.jpg');
     /* border: solid black 2px; */
+    background-position: center;
     background-size: cover;
-    background-position-y: -40px;
+    /* background-position-y: -40px; */
     box-sizing: border-box;
     font-size: 30px;
     color: white;
     transition: all 0.5s;
-    -webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(80%);
+    /* -webkit-filter: grayscale(80%);
+    filter: grayscale(80%); */
     cursor: pointer;
     box-shadow: 0px 10px 40px -10px black;
     border-radius: 5px;
     overflow: hidden;
 }
 
-.con-header span{
+.pol-header span{
     width: 100%;
     height: 100%;
     /* margin: auto; */
@@ -377,28 +381,28 @@ body{
 }
 
 
-.con-header:hover {
+.pol-header:hover {
     color: rgb(0, 0, 0);
     -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
     filter: grayscale(0%);
 }
 
-.con-header:hover .column-header-hover{
+.pol-header:hover .column-header-hover{
     transform: translateY(-100%)
 }
 
-.con-header:hover .column-header-hover-white{
+.pol-header:hover .column-header-hover-white{
     transform: translateY(0%)
 }
 
 /* header button/div for members of congress' stances */
-.congress-header {
+.celeb-header {
     display: flex;
     position: relative;
     height: 75%;
     width: 30%;
     /* left: 66.66%; */
-    background-image: url('https://res.cloudinary.com/siouxcitymusic/image/upload/v1549580389/louis-velazquez-588272-unsplash.jpg');
+    background-image: url('https://res.cloudinary.com/siouxcitymusic/image/upload/v1554260275/Bernie_Reactor/Celebrities.jpg');
     background-position-y: center;
     background-size: 100%;
     /* border-top: solid black 2px;
@@ -407,8 +411,8 @@ body{
     box-sizing: border-box;
     font-size: 30px;
     color: white;
-    -webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(80%);
+    /* -webkit-filter: grayscale(80%);
+    filter: grayscale(80%); */
     transition: all 0.5s;
     cursor: pointer;
     box-shadow: 0px 10px 40px -10px black;
@@ -416,7 +420,7 @@ body{
     overflow: hidden;
 }
 
-.congress-header span{
+.celeb-header span{
     /* position: absolute;
     left: 0;
     right: 0;
@@ -428,15 +432,15 @@ body{
     z-index: 1;
 }
 
-.congress-header:hover .column-header-hover{
+.celeb-header:hover .column-header-hover{
     transform: translateY(-100%)
 }
 
-.congress-header:hover .column-header-hover-white{
+.celeb-header:hover .column-header-hover-white{
     transform: translateY(0%)
 }
 
-.congress-header:hover {
+.celeb-header:hover {
     color: black;
     -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
     filter: grayscale(0%);
@@ -499,7 +503,7 @@ body{
   .landing-text-1 {
       margin-right: auto;
       margin-left:auto;
-      font-size: 22px;
+      font-size: 28px;
       max-width: 70%;
       text-align: left;
   }
@@ -523,7 +527,7 @@ body{
 .landing-text-4 {
     margin-right: auto;
     margin-left:auto;
-    font-size: 22px;
+    font-size: 28px;
     max-width: 70%;
     text-align: left;
 }
@@ -590,20 +594,20 @@ body{
         
     }
     
-    .con-header {
+    .pol-header {
         background-size: auto 100%;
         background-position-y: 0;
     }
 
-    .con-header span{
+    .pol-header span{
         font-size: 17px;
     }
 
-    .congress-header{
+    .celeb-header{
         background-size: auto 100%;
     }
 
-    .congress-header span{
+    .celeb-header span{
         font-size: 17px;
     }
 
@@ -662,11 +666,11 @@ body{
         
     }
 
-    .con-header span{
+    .pol-header span{
         font-size: 14px;
     }
 
-    .congress-header span{
+    .celeb-header span{
         font-size: 14px;
     }
 }

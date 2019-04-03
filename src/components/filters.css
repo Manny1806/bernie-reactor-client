@@ -1,5 +1,5 @@
 /* Dropdown Button */
-.pro-filter-dropbtn {
+.org-filter-dropbtn {
     background-color: #3498DB;
     color: white;
     padding: 8px;
@@ -10,18 +10,18 @@
   }
   
   /* Dropdown button on hover & focus */
-  .pro-filter-dropbtn:hover, .pro-filter-dropbtn:focus {
+  .org-filter-dropbtn:hover, .org-filter-dropbtn:focus {
     background-color: #2980B9;
   }
   
   /* The container <div> - needed to position the dropdown content */
-  .pro-filter-dropdown {
+  .org-filter-dropdown {
     position: relative;
     display: inline-block;
   }
   
   /* Dropdown Content (Hidden by Default) */
-  .pro-filter-dropdown-content {
+  .org-filter-dropdown-content {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
@@ -31,7 +31,7 @@
   }
   
   /* Links inside the dropdown */
-  .pro-filter-dropdown-content label {
+  .org-filter-dropdown-content label {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -40,7 +40,7 @@
     background-color: beige
   }
 
-  .pro-filter-dropdown-content label:hover {
+  .org-filter-dropdown-content label:hover {
     
     background-color: rgb(160, 160, 141)
   }

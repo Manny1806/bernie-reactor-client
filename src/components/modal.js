@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { hideModal } from '../actions/home/modal'
 import { connect } from 'react-redux'
-import ActiveProCard from './pro/active-pro-card'
-import ActiveConCard from './con/active-con-card'
-import ActiveCongressCard from './congress/active-congress-card'
+import ActiveOrgCard from './org/active-org-card'
+import ActivePolCard from './pol/active-pol-card'
+import ActiveCelebCard from './celeb/active-celeb-card'
 import Login from './login/login'
 import FeedbackModal from './feedbackModal'
 
@@ -12,14 +12,14 @@ import './modal.css'
 
 class Modal extends Component {
   setPage() {
-    if (this.props.page === 'active-pro-card'){
-      return <ActiveProCard />
+    if (this.props.page === 'active-org-card'){
+      return <ActiveOrgCard />
     }
-    else if (this.props.page === 'active-con-card'){
-      return <ActiveConCard />
+    else if (this.props.page === 'active-pol-card'){
+      return <ActivePolCard />
     }
-    else if (this.props.page === 'active-congress-card'){
-      return <ActiveCongressCard />
+    else if (this.props.page === 'active-celeb-card'){
+      return <ActiveCelebCard />
     }
     else if (this.props.page === 'login'){
       return <Login />
